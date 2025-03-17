@@ -45,7 +45,7 @@ namespace ProductApps
             totalPay = Convert.ToDecimal(totalPaymentTextBlock.Text);
             totalChargeTextBox.Text = Convert.ToString(totalPay + deliveryCharge);
             wrapTextBlock.Text = Convert.ToString(Convert.ToDecimal(totalChargeTextBox.Text) + 5m);
-
+            gstTextBlock.Text = Convert.ToString(Convert.ToDecimal(wrapTextBlock.Text) * 1.1m);
 
         }
 
