@@ -14,7 +14,6 @@ namespace ProductApps
         private decimal delivery;
         private decimal wrapping;
         private decimal gst;
-
         private decimal Price
         {
             get { return price; }

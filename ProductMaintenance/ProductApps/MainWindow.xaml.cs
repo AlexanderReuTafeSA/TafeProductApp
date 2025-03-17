@@ -39,6 +39,13 @@ namespace ProductApps
             {
                 MessageBox.Show("Enter data again", "Data Entry Error");
             }
+            decimal deliveryCharge = 25m;
+            decimal totalPay;
+            
+            totalPay = Convert.ToDecimal(totalPaymentTextBlock.Text);
+            totalChargeTextBox.Text = Convert.ToString(totalPay + deliveryCharge);
+
+            
         }
 
         private void clearButton_Click(object sender, RoutedEventArgs e)
@@ -47,6 +54,7 @@ namespace ProductApps
             priceTextBox.Text = "";
             quantityTextBox.Text = "";
             totalPaymentTextBlock.Text = "";
+            totalChargeTextBox.Text = "";
         }
 
         private void closeButton_Click(object sender, RoutedEventArgs e)
