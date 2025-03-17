@@ -44,8 +44,9 @@ namespace ProductApps
             
             totalPay = Convert.ToDecimal(totalPaymentTextBlock.Text);
             totalChargeTextBox.Text = Convert.ToString(totalPay + deliveryCharge);
+            wrapTextBlock.Text = Convert.ToString(Convert.ToDecimal(totalChargeTextBox.Text) + 5m);
 
-            
+
         }
 
         private void clearButton_Click(object sender, RoutedEventArgs e)
